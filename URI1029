@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+int fibo(int n,int& call)
+{
+    int sum1=0;
+    call++;
+    if(n==0)
+        return 0;
+    else if(n==1)
+        return 1;
+    else
+    {
+        sum1=fibo(n-1,call)+fibo(n-2,call);
+    }
+    return sum1;
+
+}
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int n;
+        cin>>n;
+        int sum=0,call=-1;
+        sum=fibo(n,call);
+        printf("fib(%d) = %d calls = %d\n",n,call,sum);
+    }
+    return 0;
+}
