@@ -1,0 +1,44 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    double N;
+    int money, Remainder1, Remainder2;
+
+    while(cin >> N)
+    {
+    money = N;
+    N = 100*N;
+    Remainder2 = N;
+
+    cout << "NOTAS:\n";
+    cout << money/100 << " nota(s) de R$ 100.00\n";
+    Remainder1 = (money%100);
+    cout << Remainder1/50 << " nota(s) de R$ 50.00\n";
+    Remainder1 = (Remainder1%50);
+    cout << Remainder1/20 << " nota(s) de R$ 20.00\n";
+    Remainder1 = (Remainder1%20);
+    cout << Remainder1/10 << " nota(s) de R$ 10.00\n";
+    Remainder1 = (Remainder1%10);
+    cout << Remainder1/5 << " nota(s) de R$ 5.00\n";
+    Remainder1 = (Remainder1%5);
+    cout << Remainder1/2 << " nota(s) de R$ 2.00\n";
+    Remainder1 = (Remainder1%2);
+    cout << "MOEDAS:\n";
+    cout << Remainder1/1 << " moeda(s) de R$ 1.00\n";
+
+    Remainder2 = Remainder2%100;
+    cout <<  Remainder2/50 << " moeda(s) de R$ 0.50\n";
+    Remainder2 = Remainder2%50;
+    cout <<  Remainder2/25 << " moeda(s) de R$ 0.25\n";
+    Remainder2 = Remainder2%25;
+    cout <<  Remainder2/10 << " moeda(s) de R$ 0.10\n";
+    Remainder2 = Remainder2%10;
+    cout <<  Remainder2/5 << " moeda(s) de R$ 0.05\n";
+    Remainder2 = Remainder2%5;
+    cout <<  Remainder2/1 << " moeda(s) de R$ 0.01\n";
+    }
+
+    return 0;
+}
