@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() 
+{
+    int n;
+    while(cin>>n)
+    {
+      if(n==0)
+      break;
+        int result;
+        int Mary=0,John=0;
+        for(int i=1;i<=n;i++)
+        {
+            cin>>result;
+            if(result==0)
+            Mary=Mary+1;
+            else
+            John=John+1;
+        }
+        cout<<"Mary won "<<Mary<<" times and John won "<<John<<" times\n";
+    }
+    return 0;
+}
