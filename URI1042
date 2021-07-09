@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int a, b, c, i, j, temp, Value[3];
+
+    cin >> a >> b >> c;
+    Value[0] = a;
+    Value[1] = b;
+    Value[2] = c;
+
+    for(i = 0; i < 3; i++)
+    {
+        for(j = 0; j < 3; j++)
+        {
+            if(Value[i] < Value[j])
+            {
+                temp = Value[j];
+                Value[j] = Value[i];
+                Value[i] = temp;
+            }
+        }
+    }
+
+    cout << Value[0] << endl << Value[1] << endl << Value[2] << endl << endl;
+    cout << a << endl << b << endl << c << endl;
+    return 0;
+}
