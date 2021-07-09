@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a, b, c, d, difference;
+    cin>>a>>b>>c>>d;
+    difference = ((c*60)+d) - ((a*60)+b);
+    if(difference<=0)
+        difference = difference + 24*60;
+    cout<<"O JOGO DUROU "<<difference/60<<" HORA(S) E "<<difference%60<<" MINUTO(S)"<<endl;
+    return 0;
+}
