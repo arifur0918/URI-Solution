@@ -1,0 +1,35 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    double Salary_In, Salary_Out, Money, Percentage, Readjustment;
+
+    cin>>Salary_In;
+
+    if(Salary_In>=0 && Salary_In<=400.00)
+        Readjustment=0.15;
+
+    else if(Salary_In>=400.01 && Salary_In<=800.00)
+        Readjustment=0.12;
+
+    else if(Salary_In>=800.01 && Salary_In<=1200.00)
+        Readjustment=0.1;
+
+    else if(Salary_In>=1200.01 && Salary_In<=2000.00)
+        Readjustment=0.07;
+
+    else
+        Readjustment=0.04;
+
+    Money=Salary_In*Readjustment;
+    Salary_Out=Salary_In+Money;
+    Percentage=Readjustment*100;
+
+    cout << "Novo salario: " << fixed << setprecision(2) << Salary_Out<< endl;
+    cout << "Reajuste ganho: " << fixed << setprecision(2) << Money << endl;
+    cout << "Em percentual: " << fixed << setprecision(0) << Percentage << " %" << endl;
+
+    return 0;
+}
