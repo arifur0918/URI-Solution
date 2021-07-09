@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int n;
+	while(cin>>n)
+	{
+		double less=12.00;
+		while(n--)
+    {
+      double Time;
+			cin>>Time;
+			if(Time<less)
+        less=Time;
+		}
+		printf("%.2lf\n",less);
+	}
+    return 0;
+}
