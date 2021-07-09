@@ -1,0 +1,56 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    string word;
+    cin >> word;
+
+    if(word == "vertebrado")
+    {
+        cin >> word;
+        if(word == "ave")
+        {
+            cin >> word;
+            if(word == "carnivoro")
+                cout << "aguia" << endl;
+            else
+                cout << "pomba" << endl;
+        }
+
+        else
+        {
+            cin >> word;
+            if(word == "onivoro")
+                cout << "homem" << endl;
+
+            else
+                cout << "vaca" << endl;
+        }
+    }
+
+    else
+    {
+        cin >> word;
+        if(word == "inseto")
+        {
+            cin >> word;
+            if(word == "hematofago")
+                cout << "pulga" << endl;
+
+            else
+                cout << "lagarta" << endl;
+        }
+
+        else
+        {
+            cin >> word;
+            if(word == "hematofago")
+                cout << "sanguessuga" << endl;
+
+            else
+                cout << "minhoca" << endl;
+        }
+    }
+    return 0;
+}
