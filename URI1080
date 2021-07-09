@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int value, position, Max=0, i;
+
+    for(i=1;i<=100;i++)
+    {
+        cin>>value;
+
+        if(value>Max)
+        {
+            Max=value;
+            position=i;
+        }
+    }
+    cout<<Max<<endl;
+    cout<<position<<endl;
+
+    return 0;
+}
