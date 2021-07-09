@@ -1,0 +1,28 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    double Array[12][12], sum=0;
+    int i, j, Line_Number;
+    char Letter;
+
+    cin>>Line_Number;
+    cin>>Letter;
+
+    for(i=0; i<12; i++)
+        for(j=0; j<12; j++)
+            cin>>Array[i][j];
+
+    for(j=0; j<12; j++)
+        sum= sum+Array[Line_Number][j];
+
+    if(Letter=='S')
+        cout<<fixed<<setprecision(1)<<sum<<endl;
+
+    else if(Letter=='M')
+        cout<<fixed<<setprecision(1)<<sum/12<<endl;
+
+    return 0;
+}
