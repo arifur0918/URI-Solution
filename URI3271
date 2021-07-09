@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int A[4],B[4],Sum_A, Sum_B;
+
+    cin>>A[0]>>A[1]>>A[2]>>A[3];
+    cin>>B[0]>>B[1]>>B[2]>>B[3];
+
+    Sum_A=A[0]+A[1]+A[2]+A[3];
+    Sum_B=B[0]+B[1]+B[2]+B[3];
+
+    if(Sum_A<Sum_B)
+        cout<<"Emma"<<endl;
+    else if(Sum_A==Sum_B)
+        cout<<"Tie"<<endl;
+    else
+        cout<<"Gunnar"<<endl;
+    return 0;
+}
