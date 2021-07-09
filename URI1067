@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+
+    int X, C= 1;
+    cin>>X;
+    while ( C <= X )
+    {
+        cout<<C<<endl;
+        C=C+2;
+    }
+    return 0;
+}
