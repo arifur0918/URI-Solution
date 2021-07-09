@@ -1,0 +1,24 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+    double A, B, C, Triangle, Circle, Trapezium, Square, Rectangle;
+    cin>>A>>B>>C;
+
+    Triangle = 0.5*A*C;
+    Circle = 3.14159*C*C;
+    Trapezium = ((A+B)/2)*C;
+    Square = B*B;
+    Rectangle = A*B;
+
+    cout<<fixed<<setprecision(3)<<"TRIANGULO: "<<Triangle<<endl;
+    cout<<fixed<<setprecision(3)<<"CIRCULO: "<<Circle<<endl;
+    cout<<fixed<<setprecision(3)<<"TRAPEZIO: "<<Trapezium<<endl;
+    cout<<fixed<<setprecision(3)<<"QUADRADO: "<<Square<<endl;
+    cout<<fixed<<setprecision(3)<<"RETANGULO: "<<Rectangle<<endl;
+
+    return 0;
+}
