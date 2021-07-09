@@ -1,0 +1,49 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    int N, Num, i, Rabit=0, Rat=0, Frog=0, Total=0;
+    char Letter;
+    double Rabit_P, Rat_P, Frog_P;
+
+    cin>>N;
+
+    for(i=1; i<=N; i++)
+    {
+        cin>>Num>>Letter;
+
+        if(Letter=='C')
+        {
+            Rabit=Rabit+Num;
+            Total=Total+Num;
+        }
+
+        else if(Letter=='R')
+        {
+            Rat= Rat+Num;
+            Total=Total+Num;
+        }
+
+        else if(Letter=='S')
+        {
+            Frog=Frog+Num;
+            Total=Total+Num;
+        }
+    }
+
+    Rabit_P=(Rabit*100.00)/Total;
+    Rat_P=(Rat*100.00)/Total;
+    Frog_P=(Frog*100.00)/Total;
+
+    cout<<"Total: "<<Total<<" cobaias"<<endl;
+    cout<<"Total de coelhos: "<<Rabit<<endl;
+    cout<<"Total de ratos: "<<Rat<<endl;
+    cout<<"Total de sapos: "<<Frog<<endl;
+    cout<<fixed<<setprecision(2)<<"Percentual de coelhos: "<<Rabit_P<<" %"<<endl;
+    cout<<fixed<<setprecision(2)<<"Percentual de ratos: "<<Rat_P<<" %"<<endl;
+    cout<<fixed<<setprecision(2)<<"Percentual de sapos: "<<Frog_P<<" %"<<endl;
+
+    return 0;
+}
