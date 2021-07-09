@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+    int X=2;
+    while ( X<=100 )
+    {
+        cout<<X<<endl;
+        X= X+2;
+    }
+    return 0;
+}
