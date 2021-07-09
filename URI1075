@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int ans=2, n;
+    cin>>n;
+
+    while(ans<=10000)
+    {
+        cout<<ans<<endl;
+        ans=ans+n;
+    }
+
+    return 0;
+}
