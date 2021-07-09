@@ -1,0 +1,25 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+    double Value, Sum=0;
+    int i, Positive=0;
+
+    for(i = 1; i <= 6; i++)
+    {
+        cin>>Value;
+        if(Value > 0)
+        {
+            Sum = Sum+Value;
+            Positive++;
+        }
+    }
+
+    cout<<Positive<<" valores positivos"<<endl;
+    cout<<fixed<<setprecision(1)<<Sum/Positive<<endl;
+
+    return 0;
+}
