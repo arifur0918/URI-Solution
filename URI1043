@@ -1,0 +1,28 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+    double A, B, C, Area, Perimeter, X;
+
+    cin>>A>>B>>C;
+
+    X = B-C;
+    if(X < 0)
+        X = -X;
+
+    if(X<A && A<B+C)
+    {
+        Perimeter=A+B+C;
+        cout<<fixed<<setprecision(1)<<"Perimetro = "<<Perimeter<<endl;
+    }
+    else
+    {
+        Area=((A+B)/2)*C;
+        cout<<fixed<<setprecision(1)<<"Area = "<<Area<<endl;
+    }
+
+    return 0;
+}
