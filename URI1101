@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int x, y, i, sum;
+
+    while(1)
+    {
+        cin>>x>>y;
+        if(x<=0 || y<=0)
+            return 0;
+
+        sum=0;
+
+        if(x>y)
+        {
+            for(i=y; i<=x; i++)
+            {
+                cout<<i<<" ";
+                sum=sum+i;
+            }
+        }
+
+        else
+        {
+            for(i=x; i<=y; i++)
+            {
+                cout<<i<<" ";
+                sum=sum+i;
+            }
+        }
+
+        cout<<"Sum="<<sum<<endl;
+    }
+
+    return 0;
+}
