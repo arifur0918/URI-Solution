@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n, Min, i, position;
+    cin>>n;
+    int Array[n];
+
+    for(i=0; i<n; i++)
+        cin>>Array[i];
+        
+    Min=Array[0];
+
+    for(i=0; i<n; i++)
+        if(Array[i]<Min)
+        {
+            Min=Array[i];
+            position=i;
+        }
+
+    cout<<"Menor valor: "<<Min<<endl;
+    cout<<"Posicao: "<<position<<endl;
+
+    return 0;
+}
